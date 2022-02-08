@@ -4,6 +4,8 @@
   "description": "An e-mobility charging station test application",
   "main": "src/main.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json && sass src/css/chargingStation.scss src/css/chargingStation.css",
+    "clean": "tsc --build --clean",
     "start": "electron ."
   },
   "repository": "https://github.com/OpenChargingCloud/ChargingStation",
